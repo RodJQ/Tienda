@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     </head>
     <body>
-        <<h1>Ejemplos de bootstrap 5</h1>
-        <hr><!-- comment -->
-        <hr><!-- comment -->
-        <h2>Gryd System</h2>
+        <h1>Ejemplos de bootstrap 5</h1>
+        <hr>
+        <hr>
+        <h2>Grid System</h2>
 
-        <div class="container border"> 
-            <div class="row"> 
+        <div class="container border" >
+            <div class="row">
+                <div class="col-1 border">Hola</div>
                 <div class="col-1 border">Hola</div>
                 <div class="col-1 border">Hola</div>
                 <div class="col-1 border">Hola</div>
@@ -29,52 +28,79 @@
                 <div class="col-1 border">Hola</div>
                 <div class="col-1 border">Hola</div>
             </div>
-        </div>
-        <br><!-- comment -->
-        <br><!-- comment -->
-
-        <div class="container border">
-            <input class="m-3" type="button" value="Saludar"/>
-        </div>
-
-        <table class="table-border">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido 1</th>
-                    <th>Apellido 2</th>
-                </tr>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido 1</th>
-                    <th>Apellido 2</th>
-                </tr>
-            </thead>
-        </table>
-
-        <br><!-- comment -->
-        <br><!-- comment -->
-
-        <div style="width: 30%; margin-left: 10px">
-            <form>
-                <label>Nombre</label>
-                <br><!-- comment -->
-                <input class="form-control" type="text" id="nombre"> 
-                <!-- 2.Select -->
-                <select class="form-control">
-                    <option>Uno</option>
-                    <option>Dos</option>
-                </select>
-                <!<!-- 3.Check box -->
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="check1">
-                    <label class="form-check-input" for="check1">Aceptar</label>
+            <div class="row">
+                <div class="col-3 border">
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
                 </div>
-                  
-            </form>
+                <div class="col-6 border">Hola</div>
+                <div class="col-1 border">Hola</div>
+                <div class="col-2 border">Hola</div>
+            </div>
+        </div>  
+        <br>
+        <div class="container border">
+            <input class="p-3" type="button" value="Saludar" />                
         </div>
+        <br>
+        <br>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <th>Nombre</th>
+            <th>Apellido 1</th>
+            <th>Apellido 2</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jonathan</td>
+                <td>Brenes</td>
+                <td>Blanco</td>
+            </tr>
+            <tr>
+                <td>Hilda</td>
+                <td>Fallas</td>
+                <td>Rodriguez</td>
+            </tr>
+        </tbody>
+    </table>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    </body>
+    <br>
+    <br>
+
+    <div style="width: 30%; margin-left: 10px;">
+        <form>
+            <label>Nombre</label><br>
+            <input class="form-control" type="text" id="nombre"><br>
+            <!-- 2. Select -->
+            <select class="form-select">
+                <option>Uno</option>
+                <option>Dos</option>
+            </select>
+            <br>
+            <!-- 3. Checkbox y radio -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1">
+                <label class="form-check-label" for="check1">Aceptar</label>
+            </div>
+            <br>
+            <!-- 4. Input group -->
+            <div class="input-group">
+                <span class="input-group-text">Correo</span>
+                <input type="text" class="form-control" placeholder="Usuario">
+            </div>
+            
+            <br>
+            <br>
+            <a class="btn btn-success">Hola</a>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
 </html>
